@@ -1,0 +1,125 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+/* Title Styling */
+h1 {
+    font-size: 2rem;
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input[type="number"] {
+    padding: 10px;
+    width: 100%;
+    max-width: 300px;
+    margin: 10px 0;
+    border: 2px solid #007bff;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Box Styling */
+#box1, #box2, #result {
+    /* display: flex;
+    flex-wrap: wrap;
+    justify-content: center; */
+    margin: 10px 0;
+}
+
+#box1 input, #box2 input, #result input {
+    width: 50px;
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#box1 input, #box2 input {
+    background-color: #f9f9f9;
+}
+
+#result input {
+    background-color: #e9ecef;
+    cursor: not-allowed;
+}
+
+/* Select Dropdown Styling */
+select {
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 2px solid #007bff;
+    width: 100px;
+}
+
+/* Sum Button Styling */
+#sum-btn {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#sum-btn:hover {
+    background-color: #218838;
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    /* input[type="number"], select {
+         max-width: 100%;
+        width: 100%; 
+    } */
+
+    #box1 input, #box2 input, #result input {
+        width: 40px;
+    }
+}
